@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE0935DD1E8031930092BF67 /* NimbusSockit.h in Headers */ = {isa = PBXBuildFile; fileRef = FE0935D81E8031930092BF67 /* NimbusSockit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE0935DE1E8031930092BF67 /* SOCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FE0935D91E8031930092BF67 /* SOCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE0935DF1E8031930092BF67 /* SOCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0935DA1E8031930092BF67 /* SOCKit.m */; };
+		B9E3847B28DCDF3F00F5B2C7 /* NimbusSockit.h in Headers */ = {isa = PBXBuildFile; fileRef = B9E3847828DCDF3F00F5B2C7 /* NimbusSockit.h */; };
+		B9E3847C28DCDF3F00F5B2C7 /* SOCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3847928DCDF3F00F5B2C7 /* SOCKit.m */; };
+		B9E3848928DCE12B00F5B2C7 /* SOCKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E3848828DCE12B00F5B2C7 /* SOCKitTests.m */; };
 		FE0935EA1E8031F10092BF67 /* SOCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0935CC1E8030B60092BF67 /* SOCKit.framework */; };
-		FE0935F11E80325C0092BF67 /* SOCKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0935DC1E8031930092BF67 /* SOCKitTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,11 +24,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9E3847828DCDF3F00F5B2C7 /* NimbusSockit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NimbusSockit.h; sourceTree = "<group>"; };
+		B9E3847928DCDF3F00F5B2C7 /* SOCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCKit.m; sourceTree = "<group>"; };
+		B9E3848328DCDFD300F5B2C7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9E3848628DCE05900F5B2C7 /* SOCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCKit.h; sourceTree = "<group>"; };
+		B9E3848828DCE12B00F5B2C7 /* SOCKitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCKitTests.m; sourceTree = "<group>"; };
 		FE0935CC1E8030B60092BF67 /* SOCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SOCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE0935D81E8031930092BF67 /* NimbusSockit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NimbusSockit.h; sourceTree = "<group>"; };
-		FE0935D91E8031930092BF67 /* SOCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCKit.h; sourceTree = "<group>"; };
-		FE0935DA1E8031930092BF67 /* SOCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCKit.m; sourceTree = "<group>"; };
-		FE0935DC1E8031930092BF67 /* SOCKitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCKitTests.m; sourceTree = "<group>"; };
 		FE0935E51E8031F10092BF67 /* SOCKit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOCKit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -52,11 +52,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9E3847528DCDF3F00F5B2C7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B9E3847628DCDF3F00F5B2C7 /* sockit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B9E3847628DCDF3F00F5B2C7 /* sockit */ = {
+			isa = PBXGroup;
+			children = (
+				B9E3848528DCE05900F5B2C7 /* include */,
+				B9E3847828DCDF3F00F5B2C7 /* NimbusSockit.h */,
+				B9E3847928DCDF3F00F5B2C7 /* SOCKit.m */,
+			);
+			path = sockit;
+			sourceTree = "<group>";
+		};
+		B9E3847D28DCDF5200F5B2C7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B9E3848728DCE12B00F5B2C7 /* sockitTests */,
+				B9E3848328DCDFD300F5B2C7 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		B9E3848528DCE05900F5B2C7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B9E3848628DCE05900F5B2C7 /* SOCKit.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B9E3848728DCE12B00F5B2C7 /* sockitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9E3848828DCE12B00F5B2C7 /* SOCKitTests.m */,
+			);
+			path = sockitTests;
+			sourceTree = "<group>";
+		};
 		FE0935C21E8030B60092BF67 = {
 			isa = PBXGroup;
 			children = (
-				FE0935D71E8031930092BF67 /* src */,
-				FE0935DB1E8031930092BF67 /* tests */,
+				B9E3847D28DCDF5200F5B2C7 /* Tests */,
+				B9E3847528DCDF3F00F5B2C7 /* Sources */,
 				FE0935CD1E8030B60092BF67 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,24 +113,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE0935D71E8031930092BF67 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				FE0935D81E8031930092BF67 /* NimbusSockit.h */,
-				FE0935D91E8031930092BF67 /* SOCKit.h */,
-				FE0935DA1E8031930092BF67 /* SOCKit.m */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		FE0935DB1E8031930092BF67 /* tests */ = {
-			isa = PBXGroup;
-			children = (
-				FE0935DC1E8031930092BF67 /* SOCKitTests.m */,
-			);
-			path = tests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -95,8 +120,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE0935DD1E8031930092BF67 /* NimbusSockit.h in Headers */,
-				FE0935DE1E8031930092BF67 /* SOCKit.h in Headers */,
+				B9E3847B28DCDF3F00F5B2C7 /* NimbusSockit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +187,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = FE0935C21E8030B60092BF67;
@@ -198,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE0935DF1E8031930092BF67 /* SOCKit.m in Sources */,
+				B9E3847C28DCDF3F00F5B2C7 /* SOCKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE0935F11E80325C0092BF67 /* SOCKitTests.m in Sources */,
+				B9E3848928DCE12B00F5B2C7 /* SOCKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
